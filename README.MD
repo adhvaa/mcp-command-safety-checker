@@ -1,4 +1,3 @@
-```markdown
 # Command Safety MCP Server
 
 **Version:** 1.0.0
