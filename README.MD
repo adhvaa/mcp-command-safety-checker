@@ -1,7 +1,7 @@
 # Command Safety MCP Server
 
-**Version:** 1.0.0
 **Author:** Amish Adhvaryu
+
 **Description:** A Node.js server that analyzes shell/Windows commands and returns a safety score (0-10) and detected intent, providing a layer of security for command execution. This project leverages the ModelContextProtocol SDK to provide an initial simple solution.
 
 ## Table of Contents
