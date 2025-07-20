@@ -1,8 +1,13 @@
-// server.js
+#!/usr/bin/env node
+
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { z } from "zod";
-import { analyzeCommand } from "./analyzer.js";
+import { getChecker } from "./checker/index.js";
+import 'dotenv/config'
+
+console.error("Checker Type=" + process.env.CHECKER_TYPE)
+const checkCommand = getChecker();
 
 const server = new McpServer({
   name: "Command Safety MCP Server",
@@ -19,8 +24,8 @@ server.tool(
   async ({ command }) => ({
     content: [
       {
-        type: "application/json",
-        text: JSON.stringify(await analyzeCommand(command), null, 2)
+        type: "text",
+        text: JSON.stringify(await checkCommand(command), null, 2)
       }
     ]
   })
