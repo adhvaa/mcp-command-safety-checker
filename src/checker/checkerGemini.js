@@ -1,7 +1,5 @@
+import '../config.js';
 import { GoogleGenAI } from "@google/genai";
-
-const GEMMA_MODEL = "gemini-2.5-flash-lite-preview-06-17";  
-import 'dotenv/config'
 
 export async function checkerGemini(command) {
   
@@ -34,7 +32,7 @@ ${command}
 
     // 2. Call Gemini API (Gemma model)
     const response = await ai.models.generateContent({
-    model: GEMMA_MODEL,
+    model: process.env.LLM_MODEL,
     contents: prompt,
   });
     console.error(response.text)
