@@ -18,7 +18,7 @@ const server = new McpServer({
 
 server.tool(
   "analyze-command",
-  "Analyze a shell/Windows command and return a safety score (0–10) and detected intent",
+  "Analyze a Windows, Linux or MacOS shell command and return a safety score (0–10) and detected intent. 0=Dangerous. 10=safe.",
   {
     command: z.string().describe("Full command string to analyze")
   },

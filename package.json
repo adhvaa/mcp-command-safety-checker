@@ -7,7 +7,7 @@
     "test": "vitest"
   },
   "bin": {
-    "mcp-command-safety-checker": "src/server.js"
+    "command-safety-checker-mcp": "src/server.js"
   },
   "type": "module",
   "keywords": [
