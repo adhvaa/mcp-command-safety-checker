@@ -20,6 +20,8 @@ This MCP (Command Safety MCP) server is designed to analyze windows linux or mac
 
 It provides a safety score (0-10), indicating the level of danger associated with the command, along with the detected intent behind it. This can be used in environments where automated command execution is required, providing an extra layer of security and control.
 
+![LM-Studio-Usage-Example](LM-Studio-Usage-Example.png)
+
 ## Features
 *   **Intent Detection:** Identifies common command intents such as file listing, directory creation, removal, network testing, and more.
 *   **Risk Scoring:** Assigns a safety score based on the presence of risky tokens and identified intents.
