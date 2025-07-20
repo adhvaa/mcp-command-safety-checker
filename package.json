@@ -1,5 +1,5 @@
 {
-  "name": "@akamish/mcp-command-safety-checker",
+  "name": "@akamish/command-safety-checker-mcp",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
