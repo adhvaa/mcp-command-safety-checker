@@ -3,8 +3,9 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { z } from "zod";
+import './config.js';
 import { getChecker } from "./checker/index.js";
-import 'dotenv/config'
+
 
 console.error("Checker Type=" + process.env.CHECKER_TYPE)
 const checkCommand = getChecker();
