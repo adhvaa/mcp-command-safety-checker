@@ -1,6 +1,3 @@
-import { z } from "zod";
-
-
 // Heuristic patterns for intent detection
 const INTENT_PATTERNS = [
   { intent: "list files",       regex: /\b(ls|dir)\b/ },
@@ -27,7 +24,7 @@ const RISKY_TOKENS = [
 ];
 
 
-export async function analyzeCommand(command) {
+export async function checkerLocal(command) {
     // 1. Compute risk count
     let riskCount = 0;
     for (const tok of RISKY_TOKENS) {
