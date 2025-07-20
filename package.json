@@ -1,5 +1,5 @@
 {
-  "name": "mcp-command-safety-checker",
+  "name": "@akamish/mcp-command-safety-checker",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
@@ -7,7 +7,7 @@
     "test": "vitest"
   },
   "bin": {
-    "cmd-safety-check": "src/server.js"
+    "mcp-command-safety-checker": "src/server.js"
   },
   "type": "module",
   "keywords": [
@@ -17,9 +17,13 @@
     "mcp",
     "llm"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adhvaa/mcp-command-safety-checker.git"
+  },
   "author": "Amish Adhvaryu",
-  "license": "ISC",
-  "description": "",
+  "license": "Apache-2.0",
+  "description": "Lightweight MCP to obtain a safetyScore and intent for any linux / windows / macOS command.",
   "dependencies": {
     "@google/genai": "^1.10.0",
     "@modelcontextprotocol/sdk": "^1.16.0",
